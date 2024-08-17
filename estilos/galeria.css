@@ -1,0 +1,189 @@
+img{
+    display: block;
+    width: 100%;
+    max-width: 199%;
+}
+
+.contenedor-flexible{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria__img{
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.column--50-25{
+    width: 24.5%;
+}
+
+.galeria__img:hover{
+    transform: scale(1.05);
+}
+
+.galeria__img--grande{
+    height:450px ;
+}
+
+.galeria__img--chica{
+    height: 250px;
+}
+
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+/*centrar la imagen seleccionada*/
+.modal__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*ancho de la imagen*/
+.modal_img{
+    width: 50%;
+}
+
+/*estilo del boton*/
+.modal_boton{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffff;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background: red;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+}
+
+/*funcion js que permite abrir la imagen*/
+.modal--open{
+    display: block;
+}
+
+.Texto h2{
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 
+    -1px -1px 0 #1d0303, /* Negro */ 
+    1px -1px 0 #1d0303,
+    -1px 1px 0 #1d0303,
+    1px 1px 0 #1d0303; 
+    color: #ffc512;
+}
+
+body{
+    background-color:#f15c34 ;
+}
+
+footer p{
+    text-shadow: 
+    -1px -1px 0 #1d0303, /* Negro */ 
+    1px -1px 0 #1d0303,
+    -1px 1px 0 #1d0303,
+    1px 1px 0 #1d0303; 
+    color: #ffc512;
+}
+
+footer .sociales{
+    text-shadow: 
+    -1px -1px 0 #1d0303, /* Negro */ 
+    1px -1px 0 #1d0303,
+    -1px 1px 0 #1d0303,
+    1px 1px 0 #1d0303; 
+    color: #ffc512;
+}
+
+footer .sociales a{
+    color: #ffc512;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal--open {
+    display: flex; /* Mostrar el modal cuando está abierto */
+}
+
+.modal__contenido {
+    background-color: #F16E36; /* Fondo naranja */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: auto; /* Permitir desplazamiento si el contenido es demasiado grande */
+    text-align: center;
+}
+
+.modal_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Borde redondeado */
+    border: 4px solid #b7f748; /* Borde verde */
+}
+
+#modal_texto {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff; /* Texto blanco */
+    text-align: center;
+}
+
+/* Estilo para el botón de cierre del modal */
+.modal_boton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.modal_boton:hover {
+    background-color: #f0f0f0;
+}
+
